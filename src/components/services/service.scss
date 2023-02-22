@@ -1,0 +1,95 @@
+.services{
+    width: 100%;
+    padding: 100px 0;
+
+    .service-wrapper{
+        max-width: 1000px;
+        margin: 0 auto;
+        .service-cont-title{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            text-align: center;
+            .service-title{
+                font-size: 1.2rem;
+                color: rgb(69, 69, 226);
+            }
+            .service-sous-title{
+                width: 60%;
+                margin: 0 auto;
+                font-size: 2.2rem;
+                font-family: 'NunitoExtraBold';
+            }
+            .apropos-barre{
+                position: relative;
+                display: flex;
+                align-items: center;
+                margin: 0 auto;
+                height: 5px;
+                width: 30%;
+                background: rgb(69, 69, 226);
+
+                .apropos-moov{
+                    background: #fff;
+                    height: 100%;
+                    width: 7px;
+                }
+            }
+        }
+        .service-rows{
+            margin: 0 auto;
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: repeat(3,300px);
+            gap: 20px;
+            .service-row{
+                padding: 30px;
+                background: #dee2f3;
+                display: grid;
+                gap: 20px;
+                text-align: center;
+                border-radius: 10px;
+                box-shadow: -1px 15px 17px 0px rgba(0, 0, 0, 0.082);
+
+                &:nth-child(6){
+                    background: rgb(69, 69, 226);
+                    color: #fff;
+
+                    .service-icon{
+                        font-size: 3rem;
+                    }
+                    .service-h3{
+                        font-size: 1.7rem;
+                        font-family: 'NunitoExtraBold';
+                    }
+                    .service-desc{
+                        font-size: 2rem;
+                        color: #fff;
+                        text-align: center;
+                        font-family: 'NunitoExtraBold';
+                    }
+                }
+
+                .service-icons{
+                    background:rgb(69, 69, 226);
+                    max-width: max-content;
+                    margin: 0 auto;
+                    padding: 10px;
+                    border-radius:5px 5px 50px 50px;
+
+                    .service-icon{
+                        color: #fff;
+                    }
+                }
+                .service-h3{
+                    font-size: 1.3rem;
+                }
+                .service-desc{
+                    font-size: .9rem;
+                    color: gray;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
