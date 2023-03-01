@@ -1,4 +1,4 @@
-import { Person2 } from '@mui/icons-material'
+import {GppGood} from '@mui/icons-material'
 import about from './../../images/about-us.jpg'
 import './apropos.scss'
 
@@ -17,19 +17,19 @@ const Apropos = () => {
                   </p>
                   <div className="apropos-rows">
                     <div className="apropos-row">
-                      <Person2/>
+                      <GppGood/>
                       <h4 className="apropos-h4">Rapidité</h4>
                     </div>
                     <div className="apropos-row">
-                      <Person2/>
+                      <GppGood/>
                       <h4 className="apropos-h4">Serviabilité</h4>
                     </div>
                     <div className="apropos-row">
-                      <Person2/>
+                      <GppGood/>
                       <h4 className="apropos-h4">Integrité</h4>
                     </div>
                     <div className="apropos-row">
-                      <Person2/>
+                      <GppGood/>
                       <h4 className="apropos-h4">Creativité</h4>
                     </div>
                   </div>

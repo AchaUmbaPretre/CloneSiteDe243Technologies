@@ -1,0 +1,93 @@
+.technologie{
+    width: 100%;
+
+    .techno-wrapper{
+        max-width: 1000px;
+        margin: 0 auto;
+        .service-cont-title{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            text-align: center;
+            .service-title{
+                font-size: 1.2rem;
+                color: rgb(69, 69, 226);
+            }
+            .service-sous-title{
+                width: 60%;
+                margin: 0 auto;
+                font-size: 2.2rem;
+                font-family: 'NunitoExtraBold';
+            }
+            .apropos-barre{
+                position: relative;
+                display: flex;
+                align-items: center;
+                margin: 0 auto;
+                height: 5px;
+                width: 15%;
+                background: rgb(69, 69, 226);
+
+                .apropos-moov{
+                    background: #fff;
+                    height: 100%;
+                    width: 7px;
+                    animation: barAnim 10s infinite;
+
+                        @keyframes barAnim {
+                            0%{
+                                transform: translateX(0px);
+                            }
+                            50%{
+                                transform: translateX(142px);
+                            }
+                            100%{
+                                transform: translateX(0px);
+                            }
+                        }
+                }
+            } 
+    }   }
+        .techno-rows{
+            display: flex;
+            padding: 50px 0;
+
+            .techno-row{
+                flex: 1;
+                background: #dee2f3;
+                .techno-title{
+                    padding: 20px 40px;
+                    .techno-h2{
+                        font-size: 1.5rem;
+                        color: rgb(69, 69, 226);
+                    }
+                }
+                .techno-cat{
+                    padding: 20px 40px 30px 40px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    .techno-cat-row{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                    }
+                    .techno-btn{
+                        background:  rgb(69, 69, 226);
+                        color: #fff;
+                        padding: 10px 15px;
+                        width: max-content;
+                        font-size: .9rem;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .techno-row:nth-child(2){
+                background: #fff;
+                box-shadow: 8px 10px 10px 10px rgba(0, 0, 0, 0.096);
+                z-index: 111;
+            }
+        }  
+        
+} 

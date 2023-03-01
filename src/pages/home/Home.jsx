@@ -1,7 +1,11 @@
 import { Groups3Outlined, PersonTwoTone } from '@mui/icons-material'
 import Apropos from '../../components/apropos/Apropos'
+import Contact from '../../components/contact/Contact'
+import Equipe from '../../components/equipe/Equipe'
+import Footer from '../../components/footer/Footer'
 import Navbar from '../../components/navbar/Navbar'
 import Service from '../../components/services/Service'
+import Technologie from '../../components/technologie/Technologie'
 import Topbar from '../../components/topbar/Topbar'
 import './home.scss'
 
@@ -49,6 +53,10 @@ const Home = () => {
                 </div>
                 <Apropos/>
                 <Service/>
+                <Technologie/>
+                <Contact/>
+                <Equipe/>
+                <Footer/>
             </div>
         </div>
     </>

@@ -1,7 +1,7 @@
 .home{
-
+    width: 100%;
     .home-wrapper{
-
+        width: 100%;
         .home-container{
             background: linear-gradient(rgba(21, 21, 65, 0.582),rgba(21, 21, 65, 0.548)), url(./../../images/banner-noel.jpg) no-repeat;
             background-position: center;
@@ -105,11 +105,10 @@
                     .client-row-right{
                         height: 60%;
                         width: 100%;
-
                         .client-h3{
                             font-size: 1rem;
                             font-weight: 500;
-                            color: rgb(69, 69, 226);;
+                            color: rgb(69, 69, 226);
                         }
                         .client-h1{
                             font-family: 'NunitoExtraBold';

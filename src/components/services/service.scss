@@ -21,19 +21,32 @@
                 font-family: 'NunitoExtraBold';
             }
             .apropos-barre{
-                position: relative;
                 display: flex;
                 align-items: center;
                 margin: 0 auto;
                 height: 5px;
-                width: 30%;
+                width: 15%;
                 background: rgb(69, 69, 226);
+                overflow: hidden;
 
                 .apropos-moov{
                     background: #fff;
                     height: 100%;
                     width: 7px;
-                }
+                    animation: barAnim 10s infinite;
+
+                        @keyframes barAnim {
+                            0%{
+                                transform: translateX(0px);
+                            }
+                            50%{
+                                transform: translateX(142px);
+                            }
+                            100%{
+                                transform: translateX(0px);
+                            }
+                        }
+                }    
             }
         }
         .service-rows{

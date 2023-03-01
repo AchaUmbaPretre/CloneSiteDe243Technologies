@@ -1,0 +1,84 @@
+.equipe{
+    width: 100%;
+    .equipe-wrapper{
+        width: 1000px;
+        margin: 0 auto;
+        padding: 50px 0 100px 0;
+        .service-cont-title{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            text-align: center;
+            padding: 50px 0;
+            .service-title{
+                font-size: 1.2rem;
+                color: rgb(69, 69, 226);
+            }
+            .service-sous-title{
+                width: 60%;
+                margin: 0 auto;
+                font-size: 2.2rem;
+                font-family: 'NunitoExtraBold';
+            }
+            .apropos-barre{
+                position: relative;
+                display: flex;
+                align-items: center;
+                margin: 0 auto;
+                height: 5px;
+                width: 15%;
+                background: rgb(69, 69, 226);
+
+                .apropos-moov{
+                    background: #fff;
+                    height: 100%;
+                    width: 7px;
+                    animation: barAnim 10s infinite;
+
+                        @keyframes barAnim {
+                            0%{
+                                transform: translateX(0px);
+                            }
+                            50%{
+                                transform: translateX(142px);
+                            }
+                            100%{
+                                transform: translateX(0px);
+                            }
+                        }
+                }
+            } 
+        }
+        .equipe-rows{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            .equipe-row{
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                .equipe-img{
+                    height: 465px;
+                    object-fit: cover;
+                    
+                }
+                .equipe-details{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    background: #dee2f3;
+                    padding: 10px;
+                    .equipe-h3{
+                        color: rgba(80, 80, 189, 0.993);
+                        font-size: 1rem;
+                    }
+                    .equipe-grade{
+                        color: gray;
+                        font-size: .9rem;
+                    }
+                }
+            }
+        }
+    }
+}
