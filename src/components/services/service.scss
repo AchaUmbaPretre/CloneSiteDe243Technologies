@@ -1,6 +1,9 @@
+@import '../../style.scss';
+
+
 .services{
     width: 100%;
-    padding: 100px 0;
+    padding: 50px 0;
 
     .service-wrapper{
         max-width: 1000px;
@@ -19,6 +22,9 @@
                 margin: 0 auto;
                 font-size: 2.2rem;
                 font-family: 'NunitoExtraBold';
+                @include mobile{
+                    width: 100%;
+                 }
             }
             .apropos-barre{
                 display: flex;
@@ -55,6 +61,19 @@
             display: grid;
             grid-template-columns: repeat(3,300px);
             gap: 20px;
+
+            @include tablette{
+                width: 100%;
+                grid-template-columns: repeat(2,300px);
+                align-items: center;
+                justify-content: center;
+            }
+
+            @include mobile{
+               display: flex;
+               flex-direction: column;
+               padding: 20px;
+            }
             .service-row{
                 padding: 30px;
                 background: #dee2f3;
@@ -63,6 +82,9 @@
                 text-align: center;
                 border-radius: 10px;
                 box-shadow: -1px 15px 17px 0px rgba(0, 0, 0, 0.082);
+                @include mobile{
+                    height: 280px;
+                 }
 
                 &:nth-child(6){
                     background: rgb(69, 69, 226);

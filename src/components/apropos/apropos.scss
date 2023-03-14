@@ -1,13 +1,28 @@
+@import '../../style.scss';
+
 .apropos{
     width: 100%;
     margin: 100px 0;
-
+    @include tablette{
+        display: flex;
+        flex-direction: column;
+        padding: 0 50px;
+    }
+    @include mobile{
+        padding: 20px;
+    }
+   
     .apropos-wrapper{
         max-width: 1000px;
         margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(1, 60% 1fr);
         gap: 20px;
+
+        @include tablette{
+            display: flex;
+            flex-direction: column;
+        }
 
         .apropos-left{
             display: flex;
@@ -23,6 +38,9 @@
                 .apropos-h1{
                     font-size: 1.2rem;
                     color: rgb(69, 69, 226);
+                    @include mobile{
+                        font-size: 1rem;
+                    }
                 }
                 .apropos-sous-title{
                     font-size: 2.4rem;
@@ -70,6 +88,9 @@
                     display: flex;
                     align-items: center;
                     gap: 10px;
+                    .apropos-icon{
+                        color: rgb(69, 69, 226);
+                    }
 
                     .apropos-h4{
                         font-size: 1rem;

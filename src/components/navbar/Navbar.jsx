@@ -1,16 +1,36 @@
 import './navbar.scss'
 import logo from './../../images/logo.png'
 import { Link } from 'react-router-dom'
-import { ArrowDropDown, Search } from '@mui/icons-material'
+import { ArrowDropDown, BarChart, Search } from '@mui/icons-material'
+import { useEffect, useState } from 'react'
 
 const Navbar = () => {
+
+    const [active, setActive] = useState(false);
+    const [bar, setBar] = useState(false)
+    
+    const handBar = () =>{
+        setBar(!bar)
+    }
+    const isActive = () =>{
+        window.scrollY > 0 ? setActive(true) : setActive(false)
+    }
+
+    useEffect(()=>{
+        window.addEventListener('scroll', isActive);
+
+        return () => {
+            window.removeEventListener('scroll', isActive)
+        }
+    },[])
   return (
     <>
-        <div className="navbar">
+        <div className = {active ? "navbar bleu" : "navbar" }>
             <div className="navbar-wrapper">
-                <img src={logo} alt="" className="navbar-logo" />
+                <img src={logo} alt="" className="navbar-logo"/>
                 <div className="navbar-right">
-                    <ul className="navbar-ul">
+                    <BarChart className='navbar-bar' onClick={handBar}/>
+                    <ul className={ bar ? "navbar-ul navbarOpen" : "navbar-ul"}>
                         <li className="navbar-li"><Link to={''} className="navbar-link">Accueil</Link></li>
                         <li className="navbar-li"><Link to={''} className="navbar-link">Equipe</Link></li>
                         <li className="navbar-li"><Link to={''} className="navbar-link">Services</Link></li>

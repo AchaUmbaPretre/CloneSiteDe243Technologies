@@ -23,15 +23,15 @@ const Technologie = () => {
                                 <GppGood/>
                             </div>
                             <div className="techno-cat-row">
-                                <span className="techno-syst">UI/UX Design</span>
+                                <span className="techno-syst">API</span>
                                 <GppGood/>
                             </div>
                             <div className="techno-cat-row">
-                                <span className="techno-syst">UI/UX Design</span>
+                                <span className="techno-syst">Cross Platform</span>
                                 <GppGood/>
                             </div>
                             <div className="techno-cat-row">
-                                <span className="techno-syst">UI/UX Design</span>
+                                <span className="techno-syst">Autres</span>
                                 <GppGood/>
                             </div>
                             <a to={""} className="techno-btn">Nous contacter</a>
@@ -44,19 +44,19 @@ const Technologie = () => {
                         <hr />
                         <div className="techno-cat">
                             <div className="techno-cat-row">
-                                <span className="techno-syst">UI/UX Design</span>
+                                <span className="techno-syst">AWS</span>
                                 <GppGood/>
                             </div>
                             <div className="techno-cat-row">
-                                <span className="techno-syst">UI/UX Design</span>
+                                <span className="techno-syst">Cloud economics</span>
                                 <GppGood/>
                             </div>
                             <div className="techno-cat-row">
-                                <span className="techno-syst">UI/UX Design</span>
+                                <span className="techno-syst">Cloud performantes</span>
                                 <GppGood/>
                             </div>
                             <div className="techno-cat-row">
-                                <span className="techno-syst">UI/UX Design</span>
+                                <span className="techno-syst">Securité</span>
                                 <GppGood/>
                             </div>
                             <a to={""} className="techno-btn">Nous contacter</a>
@@ -69,19 +69,19 @@ const Technologie = () => {
                         <hr />
                         <div className="techno-cat">
                             <div className="techno-cat-row">
-                                <span className="techno-syst">UI/UX Design</span>
+                                <span className="techno-syst">Data transformation</span>
                                 <GppGood/>
                             </div>
                             <div className="techno-cat-row">
-                                <span className="techno-syst">UI/UX Design</span>
+                                <span className="techno-syst">Data visualisation</span>
                                 <GppGood/>
                             </div>
                             <div className="techno-cat-row">
-                                <span className="techno-syst">UI/UX Design</span>
+                                <span className="techno-syst">Data pipeline</span>
                                 <GppGood/>
                             </div>
                             <div className="techno-cat-row">
-                                <span className="techno-syst">UI/UX Design</span>
+                                <span className="techno-syst">Wharehouse as service</span>
                                 <GppGood/>
                             </div>
                             <a to={""} className="techno-btn">Nous contacter</a>

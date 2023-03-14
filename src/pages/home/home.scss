@@ -1,5 +1,9 @@
+@import '../../style.scss';
+
+
 .home{
     width: 100%;
+    overflow: hidden;
     .home-wrapper{
         width: 100%;
         .home-container{
@@ -20,6 +24,13 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                @include tablette{
+                    height: calc(50vh - 150px);
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
 
                 .home-h1{
                     color: #fff;
@@ -37,6 +48,15 @@
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             box-shadow: -1px 15px 17px 0px rgba(0, 0, 0, 0.151);
+            @include tablette{
+                display: flex;
+                flex-direction: column;
+                 max-width: 600px;
+                 margin: 100px auto;
+            }
+            @include mobile{
+                max-width: 380px;
+            }
 
             .client-left{
                 height: 100%;
@@ -46,6 +66,9 @@
                 align-items: center;
                 justify-content: center;
                 color: #fff;
+                @include mobile{
+                    padding-bottom: 20px;
+                }
 
                 .client-rows{
                     height: 100%;
@@ -61,17 +84,31 @@
                         align-items: center;
                         justify-content: center;
                         background: #fff;
+                        @include mobile{
+                            height: 80%;
+                            width: 100%;
+                     }
+                
                         .client-icon{
                             color:rgb(69, 69, 226);
+                            @include mobile{
+                               
+                            }
                         }
                     }
                     .client-row-right{
                         height: 60%;
                         width: 100%;
+                        @include mobile{
+                            height: 100%;
+                     }
 
                         .client-h3{
                             font-size: 1rem;
                             font-weight: 500;
+                            @include mobile{
+                                font-size: .9rem;
+                             }
                         }
                     }
                 }
@@ -83,6 +120,10 @@
                 align-items: center;
                 justify-content: center;
                 background: #dee2f3;
+                @include mobile{
+                    height: 100%;
+                    width: 100%;
+                 }
 
                 .client-rows{
                     height: 100%;
@@ -98,6 +139,10 @@
                         align-items: center;
                         justify-content: center;
                         background: rgb(69, 69, 226);
+                        @include mobile{
+                            height: 80%;
+                            width: 100%;
+                         }
                         .client-icon{
                             color: #fff;
                         }
@@ -105,10 +150,18 @@
                     .client-row-right{
                         height: 60%;
                         width: 100%;
+                        @include mobile{
+                            height: 60%;
+                            width: 100%;
+                            margin-bottom: 10px;
+                         }
                         .client-h3{
                             font-size: 1rem;
                             font-weight: 500;
                             color: rgb(69, 69, 226);
+                            @include mobile{
+                                font-size: .9rem;
+                             }
                         }
                         .client-h1{
                             font-family: 'NunitoExtraBold';

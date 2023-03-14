@@ -1,3 +1,5 @@
+@import '../../style.scss';
+
 .technologie{
     width: 100%;
 
@@ -51,6 +53,15 @@
         .techno-rows{
             display: flex;
             padding: 50px 0;
+
+            @include tablette{
+                padding: 50px 20px;
+            }
+            @include mobile{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
 
             .techno-row{
                 flex: 1;

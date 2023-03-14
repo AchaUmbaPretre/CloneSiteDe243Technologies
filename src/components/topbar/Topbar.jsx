@@ -11,7 +11,7 @@ const Topbar = () => {
                         <LocationOn className='topbar-icons'/>
                         <span className="topbar-adresse">6 tabora, Kinshasa gombe, Rdc</span>
                     </div>
-                    <div className="topbar-left-icons">
+                    <div className="topbar-left-icons topNum">
                         <Phone className='topbar-icons'/>
                         <span className="topbar-adresse">+243810836943</span>
                     </div>

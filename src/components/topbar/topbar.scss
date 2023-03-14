@@ -1,3 +1,5 @@
+@import '../../style.scss';
+
 .topbar{
     display: grid;
     align-items: center;
@@ -29,6 +31,16 @@
                 }
                 .topbar-adresse{
                     font-size: .8rem;
+                    @include mobile{
+                        .topbar-adresse{
+                            font-size: .7rem;
+                        }
+                    }
+                }
+            }
+            @include mobile{
+                .topNum{
+                    display: none;
                 }
             }
         }

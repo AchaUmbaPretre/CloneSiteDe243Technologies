@@ -17,19 +17,19 @@ const Apropos = () => {
                   </p>
                   <div className="apropos-rows">
                     <div className="apropos-row">
-                      <GppGood/>
+                      <GppGood className='apropos-icon'/>
                       <h4 className="apropos-h4">Rapidité</h4>
                     </div>
                     <div className="apropos-row">
-                      <GppGood/>
+                      <GppGood className='apropos-icon'/>
                       <h4 className="apropos-h4">Serviabilité</h4>
                     </div>
                     <div className="apropos-row">
-                      <GppGood/>
+                      <GppGood className='apropos-icon'/>
                       <h4 className="apropos-h4">Integrité</h4>
                     </div>
                     <div className="apropos-row">
-                      <GppGood/>
+                      <GppGood className='apropos-icon'/>
                       <h4 className="apropos-h4">Creativité</h4>
                     </div>
                   </div>

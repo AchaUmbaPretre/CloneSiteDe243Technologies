@@ -1,9 +1,18 @@
+@import '../../style.scss';
+
 .equipe{
     width: 100%;
     .equipe-wrapper{
         width: 1000px;
         margin: 0 auto;
         padding: 50px 0 100px 0;
+        @include tablette{
+            padding: 20px;
+        }
+        @include mobile{
+            width: 100%;
+            padding: 20px;
+        }
         .service-cont-title{
             display: flex;
             flex-direction: column;
@@ -13,12 +22,18 @@
             .service-title{
                 font-size: 1.2rem;
                 color: rgb(69, 69, 226);
+                @include mobile{
+                    font-size: 1rem;
+                }
             }
             .service-sous-title{
                 width: 60%;
                 margin: 0 auto;
                 font-size: 2.2rem;
                 font-family: 'NunitoExtraBold';
+                @include mobile{
+                    width: 100%;
+                }
             }
             .apropos-barre{
                 position: relative;
@@ -51,16 +66,29 @@
         }
         .equipe-rows{
             display: flex;
-            flex-wrap: wrap;
             gap: 25px;
+            width: 100%;
+            @include tablette{
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+            }
+            @include mobile{
+                width: 100%;
+                flex-direction: column;
+            }
             .equipe-row{
                 flex: 1;
                 display: flex;
                 flex-direction: column;
+
                 .equipe-img{
                     height: 465px;
                     object-fit: cover;
-                    
+                    @include mobile{
+                        height: 400px;
+                        width: 100%;
+                    }
                 }
                 .equipe-details{
                     display: flex;
