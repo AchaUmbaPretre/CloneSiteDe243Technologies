@@ -57,6 +57,9 @@
             @include mobile{
                 max-width: 380px;
             }
+            @include mobileSE{
+                max-width: 340px;
+            }
 
             .client-left{
                 height: 100%;

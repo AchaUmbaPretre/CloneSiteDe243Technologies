@@ -31,8 +31,8 @@ const Navbar = () => {
                 <div className="navbar-right">
                     <BarChart className='navbar-bar' onClick={handBar}/>
                     <ul className={ bar ? "navbar-ul navbarOpen" : "navbar-ul"}>
-                        <li className="navbar-li"><Link to={''} className="navbar-link">Accueil</Link></li>
-                        <li className="navbar-li"><Link to={''} className="navbar-link">Equipe</Link></li>
+                        <li className="navbar-li"><Link to={'/'} className="navbar-link">Accueil</Link></li>
+                        <li className="navbar-li"><Link to={'/equipe'} className="navbar-link">Equipe</Link></li>
                         <li className="navbar-li"><Link to={''} className="navbar-link">Services</Link></li>
                         <li className="navbar-li"><Link to={''} className="navbar-link">Blog <ArrowDropDown className='icons-link'/></Link></li>
                         <li className="navbar-li"><Link to={''} className="navbar-link">Pages <ArrowDropDown className='icons-link'/></Link></li>

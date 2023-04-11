@@ -31,11 +31,16 @@
                 }
                 .topbar-adresse{
                     font-size: .8rem;
+                
                     @include mobile{
-                        .topbar-adresse{
-                            font-size: .7rem;
-                        }
+                        font-size: .8rem;
+
                     }
+                    @include mobileSE{
+                        font-size: .7rem;
+
+                    }
+
                 }
             }
             @include mobile{
@@ -53,6 +58,10 @@
                 padding: 5px;
                 border-radius: 50%;
                 border: 1px solid #fff;
+                &:hover{
+                    cursor: pointer;
+                    transform: scale(1.1);
+                }
             }
         }
     }
